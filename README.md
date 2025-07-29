@@ -54,7 +54,7 @@ Version | Status | JSF version | Java version | Documentation
 ![11.0.x](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=11&color=cyan) | LTS | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF40](https://img.shields.io/badge/JSF-4.0-green.svg) | ![Java](https://img.shields.io/badge/Java%208+-blue.svg) | [HTML](https://primefaces.github.io/primefaces/11_0_0/#/)
 ![10.0.x](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=10&color=cyan) | LTS | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF30](https://img.shields.io/badge/JSF-3.0-yellow.svg) | ![Java](https://img.shields.io/badge/Java%208+-blue.svg) | [HTML](https://primefaces.github.io/primefaces/10_0_0/#/)
 ![8.0](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=8&color=cyan) | LTS | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%208+-blue.svg) | [HTML](https://primefaces.github.io/primefaces/8_0/#/)
-![7.0](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=7&color=cyan) | LTS | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%207+-red.svg) | [HTML](https://primefaces.github.io/primefaces/7_0/#/)
+![7.0](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=7&color=cyan) | Legacy | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%207+-red.svg) | [HTML](https://primefaces.github.io/primefaces/7_0/#/)
 ![6.2](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=6.2&color=cyan) | Legacy | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%206+-red.svg) | [PDF](https://www.primefaces.org/docs/guide/primefaces_user_guide_6_2.pdf)
 ![6.1](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=6.1&color=cyan) | Legacy | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%205+-red.svg) | [PDF](https://www.primefaces.org/docs/guide/primefaces_user_guide_6_1.pdf)
 ![6.0](https://img.shields.io/maven-central/v/org.primefaces/primefaces.svg?versionPrefix=6.0&color=cyan) | Legacy | ![JSF20](https://img.shields.io/badge/JSF-2.0-red.svg) -  ![JSF23](https://img.shields.io/badge/JSF-2.3-yellow.svg) | ![Java](https://img.shields.io/badge/Java%205+-red.svg) | [PDF](https://www.primefaces.org/docs/guide/primefaces_user_guide_6_0.pdf)
@@ -74,14 +74,14 @@ Version | Status | JSF version | Java version | Documentation
   <dependency>
       <groupId>org.primefaces</groupId>
       <artifactId>primefaces</artifactId>
-      <version>15.0.4</version>
+      <version>15.0.6</version>
   </dependency>
 
   <!-- Jakarta EE / jakarta.* / Faces 4.0+  -->	
   <dependency>
       <groupId>org.primefaces</groupId>
       <artifactId>primefaces</artifactId>
-      <version>15.0.4</version>
+      <version>15.0.6</version>
       <classifier>jakarta</classifier>
   </dependency>
   ```
@@ -159,13 +159,7 @@ Visit the [contribution](./CONTRIBUTING.md) page for detailed information.
 
 ### Release Instructions
 ***
-- Run `mvn versions:set -DgenerateBackupPoms=false -DnewVersion=15.0.4` to update all modules versions
-- Commit and push the changes to GitHub
-- In GitHub create a new Release titled `15.0.4` to tag this release
-- Run `mvn clean deploy -Prelease` to push to Maven Central
-- Rename Milestone in GitHub Issues and close it
-- Create a new Milestone
-
+Visit the [Release Checklist](https://github.com/primefaces/primefaces/wiki/Release-Checklist) for how to release an LTS or STS version.
 
 ### License
 ***
